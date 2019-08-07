@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <app-header></app-header>
-    <router-view/>
+    <v-app>
+      <AppHeader/>
+      <v-content>
+        <router-view></router-view>
+      </v-content>
+    </v-app>
   </div>
 </template>
 
@@ -10,7 +14,7 @@
 
 export default {
   components: {
-    AppHeader
+   AppHeader
   }
 }
 </script>

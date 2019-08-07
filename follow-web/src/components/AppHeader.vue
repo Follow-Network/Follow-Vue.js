@@ -1,13 +1,18 @@
 <template>
-    <v-app>
-        <v-toolbar app dark class="primary">
-            <v-toolbar-title v-text="'Follow'"></v-toolbar-title>
-            <v-spacer></v-spacer>
-            <v-toolbar-items>
-                <v-btn color>Button</v-btn>
-            </v-toolbar-items>
-        </v-toolbar>
-    </v-app>
+   <nav>
+       <v-toolbar class="primary">
+            <v-toolbar-title class="text-uppercase white--text">
+                Follow
+            </v-toolbar-title>
+           <v-spacer></v-spacer>
+           <button type="button" class="v-btn v-btn--flat v-btn--text theme--light v-size--small primary--text">
+               <span class="v-btn__content">Primary</span>
+           </button>
+           <v-btn class="v-btn v-btn--flat v-btn--text theme--light v-size--small">
+               <span class="v-btn__content">Sign In</span>
+           </v-btn>
+       </v-toolbar>
+   </nav>
 </template>
 
 <script>
@@ -16,9 +21,9 @@
             menuItems() {
                 return [
                     {
-                        icon: 'visibility',
+                        icon: 'exit_to_app',
                         title: 'Sign Up',
-                        route: '/login'
+                        route: '/login',
                     }
                 ]
             }
